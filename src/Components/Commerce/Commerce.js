@@ -18,7 +18,7 @@ export default function Commerce() {
             </div>
             <div  className="info-container">
                 <h3>{commerce.nombreComercio}</h3>
-                <p>{commerce.direccionComercio}</p>
+                <p>{commerce.tp} min</p>
                 <div className="category-container">
                 {
                     Db.Categorias.map((element,i)=>{
