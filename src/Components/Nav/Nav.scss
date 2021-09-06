@@ -1,0 +1,121 @@
+@import "../../Scss/index.scss";
+
+.header-container {
+  background-color: $primary-color;
+  width: 100%;
+  height: 70px;
+  position: relative;
+  position: fixed;
+  box-shadow: $shadowLight;
+  .btn-open-menu {
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    left: 20px;
+    top: 20px;
+    width: 50px;
+    font-size: 30px;
+    color: $yellow;
+    text-shadow: 1px 1px 2px black;
+    cursor: pointer;
+  }
+
+  .btn-shopping-card {
+    position: absolute;
+    right: 0;
+    display: inline-block;
+    right: 20px;
+    top: 20px;
+    width: 50px;
+    font-size: 30px;
+    color: $yellow;
+
+    cursor: pointer;
+  }
+
+  .header-logo {
+    width: 80px;
+    height: 80px;
+  }
+
+  .nav-container {
+    position: absolute;
+    position: fixed;
+    margin: 0px;
+    padding: 0px;
+    width: 20%;
+    height: 100vh;
+    top: 70px;
+    animation: left-right;
+    animation-duration: 0.5s;
+    box-shadow: 2px 2px 2px 1px rgba(89, 89, 89, 0.2);
+    ul {
+      background-color: $secondary-color;
+      width: 100%;
+      display: flex;
+      padding: 0px;
+      margin: 0px;
+      padding-top: 50px;
+      flex-direction: column;
+      justify-content: start;
+      align-items: flex-start;
+      height: 100vh;
+
+      .avatar-container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 100px;
+
+        .avatar {
+          width: 80px;
+          height: 80px;
+        }
+      }
+
+      .nav-link {
+        color: #fff;
+        text-transform: uppercase;
+
+        li {
+          margin-left: 30px;
+          width: 50%;
+          padding: 10px;
+          text-align: justify;
+        }
+
+        &:hover {
+          color: $yellow;
+        }
+      }
+
+      .link-active {
+        color: $yellow;
+        border-left: 1px solid $yellow;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    .nav-container {
+      position: absolute;
+      position: fixed;
+      margin: 0px;
+      padding: 0px;
+      width: 50%;
+      height: 100vh;
+    }
+  }
+}
+
+//Animations
+@keyframes left-right {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

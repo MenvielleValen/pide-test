@@ -1,0 +1,88 @@
+@import "../../Scss/index.scss";
+
+.commerce-container {
+  display: flex;
+  width: 600px;
+  background-color: $primary-color;
+  border-radius: 15px;
+  box-shadow: 2px 2px 2px 1px rgba(89, 89, 89, 0.2);
+  border: 2px solid rgba(89, 89, 89, 0);
+  overflow: hidden;
+  transition: 0.5s;
+  cursor: pointer;
+  margin-bottom: 10px;
+  .img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    height: 170px;
+    width: 200px;
+    img {
+      width: 100%;
+      height: fit-content;
+      object-fit: cover;
+    }
+
+    .fade {
+      animation: fade;
+      animation-duration: 3s;
+    }
+  }
+
+  .info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h3 {
+      width: 100%;
+      text-align: justify;
+      color: $yellow;
+      text-transform: uppercase;
+      font-size: 20px;
+      padding-right: 20px;
+    }
+    p {
+      width: 95%;
+      text-align: justify;
+      color: #fff;
+      font-size: 13px;
+      padding-right: 20px;
+    }
+    .category-container {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+      .category {
+        width: fit-content;
+        text-align: justify;
+        display: inline;
+        font-size: 13px;
+        color: rgb(230, 230, 230);
+      }
+    }
+  }
+
+  &:hover {
+    border: 2px solid $yellow;
+  }
+}
+
+@media (max-width: 768px) {
+  .commerce-container {
+    width: 450px;
+  }
+}
+
+//Animations
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

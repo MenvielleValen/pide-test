@@ -1,0 +1,23 @@
+@import "../../Scss/index.scss";
+
+.container {
+  h3 {
+    margin: 0px auto;
+    margin-top: 30px;
+    text-align: center;
+    color: $primary-color;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  .commerces-container {
+    margin: 0px auto;
+    margin-top: 50px;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}
