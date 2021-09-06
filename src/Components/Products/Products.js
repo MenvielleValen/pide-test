@@ -49,6 +49,7 @@ export default function Products(params) {
                                 }
                             })
                         }
+                    <NavLink key={"linkcombo"} activeClassName="active" className="link" to={"/comercios/102/"+commerce[0].idComercio}><li key={"categorycombos"} className="category">Combos</li></NavLink>
                     </ul>
                 </nav>
                 <Route exact path="/comercios/:id/:comerid" component={ViewProducts} /> 

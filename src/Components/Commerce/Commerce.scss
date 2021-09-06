@@ -74,6 +74,17 @@
 @media (max-width: 768px) {
   .commerce-container {
     width: 450px;
+
+    .img-container {
+      height: 180px;
+      width: 220px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
   }
 }
 

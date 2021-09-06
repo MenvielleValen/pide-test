@@ -8,12 +8,12 @@ export default function Product(params) {
     
     const [load, setLoad] = useState(false);
     const [liked, setliked] = useState(false)
-    const {product} = params; //Recepcion de datos por parametros 
+    const {product} = params; 
 
     return (
         <div className="product-container">
            <div className="img-container">
-                <img loading="lazy" onLoad={()=>{setLoad(true)}} className={load ? "fade" : ""} src={load ? product.imagenProducto : Load} alt={product.nombreProducto}/>
+                <img loading="lazy" onLoad={()=>{setLoad(true)}} className={load ? "fade" : undefined} src={load ? product.imagenProducto : Load} alt={product.nombreProducto}/>
            </div>
            <div className="info-container">
                 <h4>{product.nombreProducto}</h4>

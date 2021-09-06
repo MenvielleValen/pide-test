@@ -14,7 +14,7 @@ export default function Commerce() {
     return (
         <Link to={"/comercios/all/"+commerce.idComercio} className="commerce-container">
             <div  className="img-container">
-                <img loading="lazy" onLoad={()=>{setload(true)}} className={load===true && "fade"} src={load ? commerce.imagenComercio : Load} alt={commerce.nombreComercio}/>
+                <img loading="lazy" onLoad={()=>{setload(true)}} className={load===true ? "fade" : undefined} src={load ? commerce.imagenComercio : Load} alt={commerce.nombreComercio}/>
             </div>
             <div  className="info-container">
                 <h3>{commerce.nombreComercio}</h3>
