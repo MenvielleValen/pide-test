@@ -1,23 +1,18 @@
 # PIDE DELIVERY WEB APP - TEST
 
-## Available Scripts
+## Iniciar proyecto
 
-In the project directory, you can run:
+Para instalar los paquetes node_modules comience con el siguiente comando:
+
+### `yarn install` / `npm install`
+
+Para lanzar el proyecto al navegador web utlice los siguientes comandos:
 
 ### `yarn start` / `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+La aplicación se ejectuta en:.\
+[http://localhost:3000](http://localhost:3000) lo verá en el navegador predeterminado.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Para construir el proyecto y compilar utlice el siguiente comando:
 
 ### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.

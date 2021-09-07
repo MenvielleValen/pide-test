@@ -16,14 +16,15 @@ export default function Commerce() {
             <div  className="img-container">
                 <img loading="lazy" onLoad={()=>{setload(true)}} className={load===true ? "fade" : undefined} src={load ? commerce.imagenComercio : Load} alt={commerce.nombreComercio}/>
             </div>
-            <div  className="info-container">
+            <div className="info-container">
                 <h3>{commerce.nombreComercio}</h3>
                 <p>{commerce.tp} min</p>
                 <div className="category-container">
                 {
-                    Db.Categorias.map((element,i)=>{
+                    //Lista todas las categorias que posee el comercio relacionando los id
+                    Db.Categorias.map((element) => { 
                         for(let i=0; i < commerce.idCategoria.length; i++){
-                            if(element.idCategoria == commerce.idCategoria[i]){
+                            if(element.idCategoria === commerce.idCategoria[i]){
                                 
                                 return(
                                         <p key={"category"+i} className="category">{element.nombreCat}</p>

@@ -38,7 +38,7 @@ export default function Products(params) {
                     <ul>
                     <NavLink key={"linkall"} exact activeClassName="active" className="link" to={"/comercios/all/"+commerce[0].idComercio}><li key={"categoryall"} className="category">Todos</li></NavLink>
                         {
-                            Db.Categorias.map((element,i)=>{
+                            Db.Categorias.map((element,i)=>{ //Busca las categorias del comercio para colocarlas en el menu de navegación
                                 for(let i=0; i < commerce[0].idCategoria.length; i++){
                                     if(element.idCategoria === commerce[0].idCategoria[i]){
                                         

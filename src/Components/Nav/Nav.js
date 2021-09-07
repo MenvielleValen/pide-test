@@ -23,17 +23,20 @@ export default function Nav() {
                 <div className="btn-open-menu" onClick={openMenu}>{menu ? <AiOutlineClose /> : <AiOutlineMenu />}</div>
                 <div className="btn-shopping-card" ><RiShoppingBasketLine /></div>
                 {
-                    menu && //Menu lateral abierto
+                    menu && 
+                    //Menu lateral abierto las etiquetas <LI> que se encuentran a continuacion no cumplen ningua función. En su reemplazo debería
+                    //haber un <NavLink> con la ruta correspondiente.
+                    //Simplemente son una simulación de las opciones de navegación.
                     <nav className="nav-container">
                         <ul>
                             <li className="avatar-container"><Avatar className="avatar" alt="Remy Sharp" src="" /></li>
-                            <a className="nav-link" href="#" >
+                            <a className="nav-link" href="#" > 
                                 <li>Cuenta</li>
                             </a>
                             <a className="nav-link" href="#">
                                 <li>Favoritos</li>
                             </a>
-                            <NavLink onClick={()=>{setMenu(false)}} exact className="nav-link" activeClassName="link-active" to="/">
+                            <NavLink onClick={()=>{setMenu(false)}} className="nav-link" activeClassName="link-active" to="/">
                                 <li>Comercios</li>
                             </NavLink>
                             <a className="nav-link" href="#">
