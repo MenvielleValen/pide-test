@@ -13,6 +13,4 @@ Para lanzar el proyecto al navegador web utlice los siguientes comandos:
 La aplicación se ejectuta en:.\
 [http://localhost:3000](http://localhost:3000) lo verá en el navegador predeterminado.
 
-Para construir el proyecto y compilar utlice el siguiente comando:
-
-### `yarn build`
+Las aclaraciones se encuentran en el codigo comentado.
