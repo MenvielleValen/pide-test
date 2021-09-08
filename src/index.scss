@@ -12,6 +12,10 @@ body {
   background-image: url("./Assets/img/backfood.png");
 }
 
+img {
+  user-select: none;
+}
+
 .container {
   position: absolute;
   top: 70px;

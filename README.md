@@ -2,7 +2,7 @@
 
 ## Iniciar proyecto
 
-Para instalar los paquetes node_modules comience con el siguiente comando:
+Para instalar los paquetes node_modules comience con cualquiera de los siguientes comandos:
 
 ### `yarn install` / `npm install`
 

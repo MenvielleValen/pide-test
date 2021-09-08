@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, Router } from 'react-router-dom'
 import Db from '../../Database/Test_Data.json'
 import './Commerce.scss'
 import Load from '../../Assets/img/load.jpg'
@@ -12,7 +12,8 @@ export default function Commerce() {
     
 
     return (
-        <Link to={"/comercios/all/"+commerce.idComercio} className="commerce-container">
+        
+            <Link to={"/comercios/all/"+commerce.idComercio} className="commerce-container">
             <div  className="img-container">
                 <img loading="lazy" onLoad={()=>{setload(true)}} className={load===true ? "fade" : undefined} src={load ? commerce.imagenComercio : Load} alt={commerce.nombreComercio}/>
             </div>
@@ -37,5 +38,6 @@ export default function Commerce() {
                 </div>           
             </div>
         </Link>
+        
     )
 }
